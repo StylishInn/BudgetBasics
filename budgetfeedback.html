@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback & Contact | BudgetBasics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+          
+    <header class="site-header">
+    <nav class="navbar">
+
+        <!-- Logo and Home on the left -->
+        <div class="nav-left">
+            <a href="index.html" class="logo-link">
+                <img
+                    src="/budget.png.png"
+                    class="site-logo"
+                >
+            </a>
+
+            <a href="index.html" class="home-link">Home</a>
+        </div>
+
+
+                <!-- HEADER AND NAVIGATION -->
+
+        <button id="menu" class="menu-toggle" type="button"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <div id="nav" class="nav-links">
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn" id="learningBtn"
+                            aria-expanded="false" aria-controls="learningMenu">
+                        Learning Topics ▾
+                    </button>
+                    <div class="dropdown-menu" id="learningMenu">
+                        <a href="budgetlearning.html#basics">Budgeting Basics</a>
+                        <a href="budgetlearning.html#needs">Needs vs Wants</a>
+                        <a href="budgetlearning.html#infographics">Infographics</a>
+                        <a href="budgetlearning.html#rule">50-30-20 Rule</a>
+                        <a href="budgetlearning.html#savings">Savings</a>
+                        <a href="budgetlearning.html#expenses">Expenses</a>
+                        <a href="budgetlearning.html#mistakes">Money Mistakes</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn" id="calculatorsBtn"
+                            aria-expanded="false" aria-controls="calculatorsMenu">
+                        Calculators ▾
+                    </button>
+                    <div class="dropdown-menu" id="calculatorsMenu">
+                        <a href="budgcalculators.html#budget-calculator">50-30-20 Calculator</a>
+                        <a href="budgcalculators.html#expense-calculator">Expense Planner</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn" id="contactDropdownBtn"
+                            aria-expanded="false" aria-controls="contactDropdown">
+                        Feedback &amp; Contact ▾
+                    </button>
+                    <div class="dropdown-menu" id="contactDropdown">
+                        <a href="budgetfeedback.html#feedback">Feedback</a>
+                        <a href="budgetfeedback.html#contact">Contact Us</a>
+                    </div>
+                </div>
+
+                <button id="dark" type="button" class="dark-btn">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    
+
+
+    <main>
+
+        <!-- PAGE INTRODUCTION -->
+
+        <section class="hero">
+
+            <div class="wrap">
+
+                <p class="eyebrow">WE VALUE YOUR OPINION</p>
+
+                <h1>Feedback & Contact</h1>
+
+                <p>
+                    Tell us about your learning experience
+                    or contact the BudgetBasics team.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEEDBACK FORM -->
+
+        <section id="feedback">
+
+            <div class="wrap">
+
+                <p class="eyebrow">01 · FEEDBACK</p>
+
+                <h2>Tell Us What You Learned</h2>
+
+                <form id="feedbackForm" class="panel form">
+
+                    <label>
+                        Name
+
+                        <input id="fname" name="name" required>
+                    </label>
+
+
+                    <label>
+                        Email
+
+                        <input
+                            id="femail"
+                            name="email"
+                            type="email"
+                            required
+                        >
+                    </label>
+
+
+                    <label>
+                        Rating
+
+                        <select id="rating" name="rating" required>
+
+                            <option value="">Choose a rating</option>
+
+                            <option value="5">5 - Excellent</option>
+
+                            <option value="4">4 - Very good</option>
+
+                            <option value="3">3 - Good</option>
+
+                            <option value="2">2 - Fair</option>
+
+                            <option value="1">1 - Needs improvement</option>
+
+                        </select>
+
+                    </label>
+
+
+                    <label>
+                        Comments
+
+                        <textarea
+                            id="comments"
+                            name="comments"
+                            rows="5"
+                            required
+                        ></textarea>
+                    </label>
+
+
+                    <button class="btn primary" type="submit">
+                        Submit Feedback
+                    </button>
+
+
+                    <p id="feedbackMsg"></p>
+
+                    <small>
+                        This demonstration validates your form
+                        in the browser. It does not send your
+                        feedback to a server.
+                    </small>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <section id="contact" class="alt">
+
+            <div class="wrap">
+
+                <p class="eyebrow">02 · CONTACT US</p>
+
+                <h2>Have a Question?</h2>
+
+                <p>
+                    We welcome questions, suggestions,
+                    and ideas for improving BudgetBasics.
+                </p>
+
+
+                <div class="contact-grid">
+
+                    <div class="panel">
+
+                        <div class="tip-icon">📧</div>
+
+                        <h3>Email</h3>
+
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angeldim97@gmail.com"
+         target="_blank"
+         rel="noopener noreferrer">
+         angeldim97@gmail.com
+</a>
+
+                       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=uchechiamakablesing1@gmail.com"
+         target="_blank"
+         rel="noopener noreferrer">
+         uchechiamakablesing1@gmail.com
+</a>
+                    </div>
+        <!-- SEND US A MESSAGE -->
+
+<div class="panel message-form">
+
+    <h3>Send Us a Message</h3>
+
+    <p>
+        Have a question or suggestion?
+        Fill in the form below and we'll get back to you.
+    </p>
+
+    <form id="contactForm"
+      action="https://formsubmit.co/angeldim97@gmail.com"
+      method="POST">
+
+    <input type="hidden" name="_subject"
+           value="New BudgetBasics Website Message">
+
+    <input type="hidden" name="_template" value="table">
+
+    <label for="visitorName">Your Name</label>
+    <input type="text" id="visitorName"
+           name="name"
+           placeholder="Enter your name" required>
+
+    <label for="visitorEmail">Your Email</label>
+    <input type="email" id="visitorEmail"
+           name="email"
+           placeholder="Enter your email" required>
+
+    <label for="messageSubject">Subject</label>
+    <input type="text" id="messageSubject"
+           name="subject"
+           placeholder="Enter message subject" required>
+
+    <label for="visitorMessage">Your Message</label>
+    <textarea id="visitorMessage"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required></textarea>
+
+    <button type="submit" class="btn primary">
+        Send Message
+    </button>
+
+</form>
+<p id="formStatus" role="status" aria-live="polite"></p>
+
+</div>
+
+
+              <div class="panel">
+
+    <div class="tip-icon">📱</div>
+
+    <h3>Phone & WhatsApp</h3>
+
+    <p>
+        <a href="tel:+2348135035405">
+            Call: +234 8135035405
+        </a>
+    </p>
+
+    <p>
+        <a href="https://wa.me/2348135035405"
+           target="_blank"
+           rel="noopener noreferrer">
+            Chat with us on WhatsApp
+        </a>
+    </p>
+
+</div>
+
+
+            <div class="panel">
+
+    <div class="tip-icon">🌐</div>
+
+    <h3>Follow Us</h3>
+
+    <p>
+        <a href="https://www.facebook.com/Ejiscomics"
+           target="_blank"
+           rel="noopener noreferrer">
+            Facebook
+        </a>
+    </p>
+
+    <p>
+    <a href="https://www.instagram.com/stylishinn1/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Instagram
+    </a>
+</p>
+
+    <p>
+    <a href="https://www.tiktok.com/@stylishinn1"
+       target="_blank"
+       rel="noopener noreferrer">
+        TikTok
+    </a>
+</p>
+
+</div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FLOATING CHATBOT -->
+
+    <div id="chatbotWidget" class="chatbot-widget">
+
+        <button
+            id="chatToggle"
+            class="chat-toggle"
+            aria-label="Open BudgetBee chatbot"
+            aria-expanded="false"
+        >
+            💬
+        </button>
+
+        <div id="chatWindow" class="chat-window hidden">
+
+            <div class="chat-header">
+
+                <div>
+                    <strong>BudgetBee AI</strong>
+                    <small>Your budgeting assistant</small>
+                </div>
+
+                <button id="chatClose" aria-label="Close chatbot">
+                    ✕
+                </button>
+
+            </div>
+
+            <div id="chat" class="chat">
+
+                <div class="bot">
+                    Hi! Ask me about budgeting, saving,
+                    needs, or avoiding overspending.
+                </div>
+
+            </div>
+
+            <div class="prompts">
+
+                <button class="prompt">What is a need?</button>
+
+                <button class="prompt">How much should I save?</button>
+
+                <button class="prompt">
+                    How do I avoid overspending?
+                </button>
+
+            </div>
+
+            <form id="chatForm" class="chatInput">
+
+                <input
+                    id="question"
+                    type="text"
+                    placeholder="Ask BudgetBee..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button id="ask" class="btn primary" type="submit">
+                    Send
+                </button>
+
+            </form>
+
+            <small class="chat-note">
+                Educational information only.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="wrap">
+
+            <a class="footer-logo" href="index.html">
+                BudgetBasics
+            </a>
+
+            <p>NextGen BudgetBee · Web Innovation Unleashed</p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="budgetlearning.html">Learning Topics</a>
+
+                <a href="#feedback">Feedback</a>
+
+                <a href="#contact">Contact Us</a>
+
+            </div>
+
+            <p>© 2026 BudgetBasics. Educational project.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

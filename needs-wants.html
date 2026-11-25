@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Understanding Needs and Wants | BudgetBasics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .needs-wants-page {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .page-intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .page-intro h1 {
+            color: #b9366b;
+            font-size: 32px;
+        }
+
+        .articles-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .article-card {
+            background: #fff5f8;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .article-card h2 {
+            color: #b9366b;
+        }
+
+        .article-card li {
+            margin-bottom: 10px;
+        }
+
+        .pause-section {
+            background: #f7dce7;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .pause-section h2 {
+            color: #b9366b;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #b9366b;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 700px) {
+            .articles-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="needs-wants-page">
+
+        <div class="page-intro">
+            <h1>Understanding Needs & Wants</h1>
+
+            <p>
+                Learning how to distinguish between needs and wants
+                is an important step towards making better financial
+                decisions and managing your money wisely.
+            </p>
+        </div>
+
+
+        <!-- ARTICLES -->
+
+        <div class="articles-container">
+
+            <article class="article-card">
+
+                <h2>What Are Needs?</h2>
+
+                <p>
+                    Needs are things we must have to live a healthy,
+                    safe and comfortable life. They are essential
+                    expenses that should be prioritised when planning
+                    a budget.
+                </p>
+
+                <h3>Examples of Needs</h3>
+
+                <ul>
+                    <li>Food and drinking water</li>
+                    <li>House rent or accommodation</li>
+                    <li>Basic clothing</li>
+                    <li>Transportation to work or school</li>
+                    <li>Healthcare and medication</li>
+                    <li>Electricity and essential bills</li>
+                </ul>
+
+                <p>
+                    <strong>Remember:</strong> Needs should generally
+                    come before unnecessary spending.
+                </p>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <h2>What Are Wants?</h2>
+
+                <p>
+                    Wants are things we would like to have but can
+                    live without. They may make life more enjoyable,
+                    but they are not essential for survival.
+                </p>
+
+                <h3>Examples of Wants</h3>
+
+                <ul>
+                    <li>Designer clothes</li>
+                    <li>Luxury wristwatches</li>
+                    <li>Expensive jewellery</li>
+                    <li>Eating at expensive restaurants</li>
+                    <li>Upgrading a phone that still works</li>
+                    <li>Unnecessary entertainment subscriptions</li>
+                </ul>
+
+                <p>
+                    <strong>Remember:</strong> It is okay to enjoy
+                    your wants, but plan for them after your needs.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- PAUSE BEFORE YOU PURCHASE -->
+
+        <section class="pause-section">
+
+            <h2>Pause Before You Purchase</h2>
+
+            <p>
+                Before spending your money, take a moment to ask
+                yourself a few important questions.
+            </p>
+
+            <p>
+                1. Do I really need this item?
+            </p>
+
+            <p>
+                2. Can I afford it without affecting my essential expenses?
+            </p>
+
+            <p>
+                3. Am I buying it because I need it or because I want it?
+            </p>
+
+            <p>
+                4. Can this money be used for something more important?
+            </p>
+
+            <h3>
+                Think Before You Spend. Plan Before You Buy!
+            </h3>
+
+        </section>
+             
+        <!-- INTERACTIVE NEEDS VS WANTS ACTIVITY -->
+
+<section id="needs" class="alt">
+
+    <div class="wrap">
+
+        <p class="eyebrow">02 · NEEDS VS WANTS</p>
+
+        <h2>Test Your Knowledge: Needs vs Wants</h2>
+
+        <p>
+            Now that you understand the difference between needs
+            and wants, let's see how well you can identify them.
+        </p>
+
+        <div class="two">
+
+            <div class="panel">
+
+                <h3 id="item">Food for regular meals</h3>
+                <p id="score">Your Score: 0 / 5</p>
+
+                <button class="btn primary classify" data-type="need">
+                    Need
+                </button>
+
+                <button class="btn classify" data-type="want">
+                    Want
+                </button>
+
+                <p id="classMsg"></p>
+
+                <button id="next" class="link">
+                    Next example →
+                </button>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>Decision Guide</h3>
+
+                <ol>
+                    <li>Do I genuinely need it now?</li>
+
+                    <li>
+                        Can I afford it without harming
+                        essentials or savings?
+                    </li>
+
+                    <li>
+                        Can I wait 24 hours before buying?
+                    </li>
+                </ol>
+
+                <div class="callout">
+                    If it can wait, review your budget first.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-home">
+                Back to BudgetBasics
+            </a>
+        </div>
+
+    </main>
+ <script src="script.js"></script>
+</body>
+</html>

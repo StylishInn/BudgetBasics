@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning Topics | BudgetBasics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- HEADER  AND NAVIGATION-->
+    
+<header class="site-header">
+    <nav class="navbar">
+
+        <!-- Logo and Home on the left -->
+        <div class="nav-left">
+            <a href="index.html" class="logo-link">
+                <img
+                    src="/budget.png.png"
+                    class="site-logo"></a>
+
+            <a href="index.html" class="home-link">Home</a>
+        </div>
+
+        <button id="menu" 
+        class="menu-toggle" 
+        type="button"
+        aria-label="Toggle navigation" 
+        aria-expanded="false">
+                ☰
+            </button>
+
+            <div id="nav" class="nav-links">
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn" id="learningBtn"
+                            aria-expanded="false" aria-controls="learningMenu">
+                        Learning Topics ▾
+                    </button>
+                    <div class="dropdown-menu" id="learningMenu">
+                        <a href="budgetlearning.html#basics">Budgeting Basics</a>
+                        <a href="budgetlearning.html#needs">Needs vs Wants</a>
+                        <a href="budgetlearning.html#infographics">Infographics</a>
+                        <a href="budgetlearning.html#rule">50-30-20 Rule</a>
+                        <a href="budgetlearning.html#savings">Savings</a>
+                        <a href="budgetlearning.html#expenses">Expenses</a>
+                        <a href="budgetlearning.html#mistakes">Money Mistakes</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn" id="calculatorsBtn"
+                            aria-expanded="false" aria-controls="calculatorsMenu">
+                        Calculators ▾
+                    </button>
+                    <div class="dropdown-menu" id="calculatorsMenu">
+                        <a href="budgcalculators.html#budget-calculator">50-30-20 Calculator</a>
+                        <a href="budgcalculators.html#expense-calculator">Expense Planner</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" class="dropdown-btn" id="contactDropdownBtn"
+                            aria-expanded="false" aria-controls="contactDropdown">
+                        Feedback &amp; Contact ▾
+                    </button>
+                    <div class="dropdown-menu" id="contactDropdown">
+                        <a href="budgetfeedback.html#feedback">Feedback</a>
+                        <a href="budgetfeedback.html#contact">Contact Us</a>
+                    </div>
+                </div>
+
+                <button id="dark" type="button" class="dark-btn">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- LEARNING PAGE INTRODUCTION -->
+        <section class="hero">
+
+            <div class="wrap">
+
+                <p class="eyebrow">BUDGETBASICS LEARNING CENTRE</p>
+
+                <h1>Build Better Money Habits</h1>
+
+                <p>
+                    Explore our budgeting lessons, practice with
+                    interactive tools, and develop better
+                    financial habits one step at a time.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING TOPIC LINKS -->
+        <section id="topics">
+
+            <div class="wrap">
+
+                <h2>Explore All Learning Topics</h2>
+
+                <div class="topic-grid">
+
+                    <a href="#basics" class="topic-card">
+                        <span>📘</span>
+                        <h3>Budgeting Basics</h3>
+                        <p>Understand income, spending, and budgeting.</p>
+                    </a>
+
+
+                    <a href="#needs" class="topic-card">
+                        <span>⚖️</span>
+                        <h3>Needs vs Wants</h3>
+                        <p>Learn to prioritize essential expenses.</p>
+                    </a>
+
+
+                    <a href="#gallery" class="topic-card">
+                        <span>📊</span>
+                        <h3>Infographics</h3>
+                        <p>Understand money concepts visually.</p>
+                    </a>
+
+
+                    <a href="#rule" class="topic-card">
+                        <span>🧮</span>
+                        <h3>50-30-20 Rule</h3>
+                        <p>Divide income into spending categories.</p>
+                    </a>
+
+
+                    <a href="#savings" class="topic-card">
+                        <span>🐷</span>
+                        <h3>Savings</h3>
+                        <p>Set goals and calculate your progress.</p>
+                    </a>
+
+
+                    <a href="#expenses" class="topic-card">
+                        <span>📝</span>
+                        <h3>Expenses</h3>
+                        <p>Record and review your spending.</p>
+                    </a>
+
+
+                    <a href="#mistakes" class="topic-card">
+                        <span>💡</span>
+                        <h3>Money Mistakes</h3>
+                        <p>Recognize habits that can drain money.</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- 01: BUDGETING BASICS -->
+
+        <section id="basics">
+
+            <div class="wrap">
+
+                <p class="eyebrow">01 · BUDGETING BASICS</p>
+
+                <h2>Know Where Your Money Goes</h2>
+
+                <div class="cards six">
+
+                    <div class="card">
+                        <b>01</b>
+                        <h3>Income</h3>
+                        <p>
+                            Money received from an allowance,
+                            scholarship, internship, or work.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <b>02</b>
+                        <h3>Fixed Expenses</h3>
+                        <p>
+                            Costs that are usually stable,
+                            such as regular fees.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <b>03</b>
+                        <h3>Variable Expenses</h3>
+                        <p>
+                            Costs that change, such as food
+                            and transportation.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <b>04</b>
+                        <h3>Needs</h3>
+                        <p>
+                            Essential spending for living,
+                            studying, and responsibilities.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <b>05</b>
+                        <h3>Wants</h3>
+                        <p>
+                            Optional purchases that can
+                            often be delayed.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <b>06</b>
+                        <h3>Savings</h3>
+                        <p>
+                            Money kept for a future goal
+                            or unexpected expense.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="two">
+
+                    <div class="panel">
+
+                        <h3>Sample Student Budget</h3>
+
+                        <table>
+
+                            <tr>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+
+                            <tr>
+                                <td>Income</td>
+                                <td>₦100,000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Needs</td>
+                                <td>₦50,000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Wants</td>
+                                <td>₦30,000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Savings</td>
+                                <td>₦20,000</td>
+                            </tr>
+
+                        </table>
+
+                        <small>Sample educational values only.</small>
+
+                    </div>
+
+
+                    <div class="panel">
+
+                        <h3>Knowledge Check</h3>
+
+                        <p>Which is normally a want?</p>
+
+                        <button class="quiz" data-ok="0">
+                            Transport to class
+                        </button>
+
+                        <button class="quiz" data-ok="1">
+                            Entertainment subscription
+                        </button>
+
+                        <button class="quiz" data-ok="0">
+                            Study materials
+                        </button>
+
+                        <p id="quizMsg"></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+
+        <!-- 03: INFOGRAPHICS -->
+
+        <section id="gallery">
+
+            <div class="wrap">
+
+                <p class="eyebrow">03 · INFOGRAPHICS</p>
+
+                <h2>Learn Visually</h2>
+
+                <div class="filters">
+
+                    <button class="filter active" data-f="all">
+                        All
+                    </button>
+
+                    <button class="filter" data-f="needs">
+                        Needs & Wants
+                    </button>
+
+                    <button class="filter" data-f="budget">
+                        Budgeting
+                    </button>
+
+                    <button class="filter" data-f="saving">
+                        Saving
+                    </button>
+
+                </div>
+
+
+                <div class="gallery">
+
+                    <article class="visual" data-topic="needs">
+
+                        <div>NEED<br><b>vs</b><br>WANT</div>
+
+                        <h3>Needs vs Wants</h3>
+
+                        <p>Essential versus optional spending.</p>
+
+                    </article>
+
+
+                    <article class="visual" data-topic="budget">
+
+                        <div>50% · 30% · 20%</div>
+
+                        <h3>50-30-20 Split</h3>
+
+                        <p>A suggested budgeting guideline.</p>
+
+                    </article>
+
+
+                    <article class="visual" data-topic="budget">
+
+                        <div>INCOME → PLAN → SPEND → REVIEW</div>
+
+                        <h3>Monthly Budget Cycle</h3>
+
+                        <p>Repeat and learn from each month.</p>
+
+                    </article>
+
+
+                    <article class="visual" data-topic="saving">
+
+                        <div>GOAL → SAVE → TRACK</div>
+
+                        <h3>Saving Challenge</h3>
+
+                        <p>Set a target and contribute consistently.</p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- 50-30-20 BUDGET CALCULATOR -->
+<section id="rule" class="budget-calculator">
+
+    <h2>50-30-20 Budget Calculator</h2>
+
+    <p>
+        Enter your monthly income or allowance to see how to divide
+        your money using the 50-30-20 budgeting rule.
+    </p>
+
+    <div class="calculator-box">
+
+        <label for="monthlyIncome">
+            Monthly Income or Allowance (₦)
+        </label>
+
+        <input
+            type="number"
+            id="monthlyIncome"
+            placeholder="e.g. 100000"
+            min="0"
+            step="any"
+        >
+
+        <button type="button" id="calculateBudget">
+            Calculate My Budget
+        </button>
+
+        <p id="budgetError" role="alert"></p>
+
+        <div id="budgetResults" aria-live="polite" hidden>
+
+            <h3>Your Monthly Budget Breakdown</h3>
+
+            <div class="budget-result needs-result">
+                <h4>50% — Needs</h4>
+                <p>Food, transport, rent and essential bills.</p>
+                <strong id="needsAmount">₦0</strong>
+            </div>
+
+            <div class="budget-result wants-result">
+                <h4>30% — Wants</h4>
+                <p>Entertainment, outings and non-essential purchases.</p>
+                <strong id="wantsAmount">₦0</strong>
+            </div>
+
+            <div class="budget-result savings-result">
+                <h4>20% — Savings</h4>
+                <p>Savings, emergency funds and financial goals.</p>
+                <strong id="savingsAmount">₦0</strong>
+            </div>
+
+            <div class="budget-total">
+                <span>Total Income:</span>
+                <strong id="totalIncome">₦0</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPENSE PLANNER --> 
+ <section id="expenses"> 
+    <h2>Expense Planner</h2> 
+    <p>Enter your expenses to calculate your total spending.</p> 
+    <form id="expenseForm"> 
+<label for="expenseAmount">Expense Amount (₦)</label> 
+<input type="number" id="expenseAmount" placeholder="e.g. 100000" min="0" step="any" required > 
+<button type="submit">Calculate Expense</button> 
+</form> 
+<p id="expenseError" role="alert"></p> 
+<div id="expenseResult" aria-live="polite" hidden> 
+    <h3>Expense Result</h3> 
+    <p>Your entered expense is:</p> 
+    <strong id="expenseTotal">₦0</strong> 
+    </div> 
+</section>
+
+
+        <!-- 07: MONEY MISTAKES -->
+
+        <section id="mistakes">
+
+            <div class="wrap">
+
+                <p class="eyebrow">07 · MONEY MISTAKES</p>
+
+                <h2>Recognize Habits That Drain Money</h2>
+
+                <div class="accordion">
+
+                    <details>
+
+                        <summary>Impulse buying</summary>
+
+                        <p>
+                            Wait before making non-essential
+                            purchases and check your budget first.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>Ignoring small expenses</summary>
+
+                        <p>
+                            Track small daily purchases because
+                            they can become a large monthly total.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>Late payments</summary>
+
+                        <p>
+                            Plan payment dates ahead of time
+                            to avoid avoidable costs.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>Unused subscriptions</summary>
+
+                        <p>Review recurring payments and cancel
+                            services you do not use.</p>
+                        </details>
+                    <details>
+
+                        <summary>Spending without a plan</summary>
+
+                        <p>
+                            Create a simple spending plan before
+                            using your income.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FLOATING CHATBOT -->
+
+    <div id="chatbotWidget" class="chatbot-widget">
+
+        <button
+            id="chatToggle"
+            class="chat-toggle"
+            aria-label="Open BudgetBee chatbot"
+            aria-expanded="false">💬</button>
+
+        <div id="chatWindow" class="chat-window hidden">
+
+            <div class="chat-header">
+
+                <div>
+                    <strong>BudgetBee AI</strong>
+                    <small>Your budgeting assistant</small>
+                </div>
+
+                <button id="chatClose" aria-label="Close chatbot">✕</button>
+
+            </div>
+
+            <div id="chat" class="chat">
+
+                <div class="bot">
+                    Hi! Ask me about budgeting, saving,
+                    needs, or avoiding overspending.
+                </div>
+
+            </div>
+
+            <div class="prompts">
+
+                <button class="prompt">What is a need?</button>
+
+                <button class="prompt">How much should I save?</button>
+
+                <button class="prompt">
+                    How do I avoid overspending?</button>
+            </div>
+
+            <form id="chatForm" class="chatInput">
+
+                <input
+                    id="question"
+                    type="text"
+                    placeholder="Ask BudgetBee..."
+                    autocomplete="off"
+                    required>
+                    <button id="ask" class="btn primary" type="submit">Send</button>
+                </form>
+                <small class="chat-note">
+                    Educational information only.
+                </small>
+            </div>
+        </div>
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="wrap">
+
+            <a class="footer-logo" href="index.html">
+                BudgetBasics
+            </a>
+
+            <p>NextGen BudgetBee · Web Innovation Unleashed</p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="budgetlearning.html">Learning Topics</a>
+
+                <a href="budgetfeedback.html">Feedback & Contact</a>
+
+            </div>
+
+            <p>© 2026 BudgetBasics. Educational project.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

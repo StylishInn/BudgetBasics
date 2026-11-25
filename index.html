@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BudgetBasics | NextGen BudgetBee</title>
+
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link" aria-label="BudgetBasics home">
+                    <img src="budget.png.png" alt="BudgetBasics logo" class="site-logo">
+                </a>
+                <a href="index.html" class="home-link">Home</a>
+            </div>
+
+            <button id="menu" class="menu-toggle" type="button"
+                    aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <div 
+            id="nav" 
+            class="nav-links">
+                <div 
+                class="dropdown">
+                    <button 
+                    type="button" 
+                    class="dropdown-btn" 
+                    id="learningBtn"
+                    aria-expanded="false" 
+                    aria-controls="learningMenu">Learning Topics ▾</button>
+
+                    <div class="dropdown-menu" 
+                    id="learningMenu">
+                        <a href="budgetlearning.html#basics">Budgeting Basics</a>
+                        <a href="budgetlearning.html#needs">Needs vs Wants</a>
+                        <a href="budgetlearning.html#infographics">Infographics</a>
+                        <a href="budgetlearning.html#rule">50-30-20 Rule</a>
+                        <a href="budgetlearning.html#savings">Savings</a>
+                        <a href="budgetlearning.html#expenses">Expenses</a>
+                        <a href="budgetlearning.html#mistakes">Money Mistakes</a>
+                        <a href="needs-wants.html">Understand Needs & Wants</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button 
+                    type="button" 
+                    class="dropdown-btn" 
+                    id="calculatorsBtn"
+                    aria-expanded="false" 
+                    aria-controls="calculatorsMenu">Calculators ▾ </button>
+
+                    <div class="dropdown-menu" id="calculatorsMenu">
+                        <a href="budgcalculators.html#budget-calculator">50-30-20 Calculator</a>
+                        <a href="budgcalculators.html#expense-calculator">Expense Planner</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button 
+                    type="button"  
+                    id="contactDropdownBtn"
+                    aria-expanded="false" 
+                    aria-controls="contactDropdown">Feedback &amp; Contact ▾ </button>
+
+                    <div class="dropdown-menu" 
+                    id="contactDropdown">
+                        <a href="budgetfeedback.html#feedback">Feedback</a>
+                        <a href="budgetfeedback.html#contact">Contact Us</a>
+                    </div>
+                </div>
+
+                <button 
+                id="dark" 
+                type="button" 
+                class="dark-btn">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOMEPAGE HERO SECTION -->
+        <section id="home" class="hero">
+
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    NEXTGEN BUDGETBEE
+                </p>
+
+                <h1>
+                    Learn to manage your money with confidence.
+                </h1>
+
+                <p>
+                    BudgetBasics is a student-friendly educational
+                    website that teaches budgeting, saving,
+                    responsible spending, and avoiding common
+                    money mistakes.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a class="btn primary" href="budgetlearning.html">Start Learning</a>
+
+                    <a class="btn" href="budgetlearning.html#rule">Try Calculator</a>
+
+                </div>
+
+                <!-- WEBSITE STATISTICS -->
+                <div class="stats">
+
+                    <div>
+                        <b id="visits">1</b>
+                        <small>Local visits</small>
+                    </div>
+
+                    <div>
+                        <b id="date">--</b>
+                        <small>Today</small>
+                    </div>
+
+                    <div>
+                        <b id="time">--</b>
+                        <small>Current time</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANIMATED BUDGET TIPS -->
+        <section id="budgetTips">
+
+            <div class="wrap">
+
+                <p class="eyebrow">SMART MONEY HABITS</p>
+
+                <h2>Budget Tips for Everyday Life</h2>
+
+                <p>
+                    Explore simple habits that can help you
+                    make better financial decisions.
+                </p>
+
+                <div class="tip-grid">
+
+                    <article class="tip-card">
+
+                        <div class="tip-icon">💰</div>
+
+                        <h3>Pay Yourself First</h3>
+
+                        <p>
+                            Set aside some money for savings
+                            before spending on non-essential items.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tip-card">
+
+                        <div class="tip-icon">📊</div>
+
+                        <h3>Plan Your Budget</h3>
+
+                        <p>
+                            Give every part of your income
+                            a purpose before you start spending.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tip-card">
+
+                        <div class="tip-icon">🛍️</div>
+
+                        <h3>Control Impulse Buying</h3>
+
+                        <p>
+                            Wait before buying something you
+                            do not immediately need.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tip-card">
+
+                        <div class="tip-icon">🎯</div>
+
+                        <h3>Set Savings Goals</h3>
+
+                        <p>
+                            Choose a clear financial goal
+                            and save towards it consistently.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tip-card">
+
+                        <div class="tip-icon">📝</div>
+
+                        <h3>Track Expenses</h3>
+
+                        <p>
+                            Record your spending so you can
+                            understand where your money goes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="tip-card">
+
+                        <div class="tip-icon">🐷</div>
+
+                        <h3>Build an Emergency Fund</h3>
+
+                        <p>
+                            Gradually save money for unexpected
+                            expenses and emergencies.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <a href="budgetlearning.html" class="btn primary">Explore All Learning Topics</a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section 
+        id="about" 
+        class="alt">
+
+            <div class="wrap two">
+
+                <div>
+
+                    <p class="eyebrow">ABOUT BUDGETBASICS</p>
+
+                    <h2>Financial Learning Made Simple</h2>
+
+                    <p>
+                        BudgetBasics helps students, college
+                        learners, and beginners understand
+                        personal finance through simple
+                        explanations, examples, and interactive
+                        learning tools.
+                    </p>
+
+                    <a href="budgetlearning.html" class="btn primary">Start Exploring</a>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <h3>What You Will Learn</h3>
+
+                    <ul>
+                        <li>How to create a budget</li>
+                        <li>How to distinguish needs from wants</li>
+                        <li>How to plan your savings</li>
+                        <li>How to manage everyday expenses</li>
+                        <li>How to avoid common money mistakes</li>
+                        <li>How to use the 50-30-20 budgeting rule</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FLOATING CHATBOT -->
+    <div id="chatbotWidget" class="chatbot-widget">
+
+        <button
+            id="chatToggle"
+            class="chat-toggle"
+            aria-label="Open BudgetBee chatbot"
+            aria-expanded="false"
+        >
+            💬
+        </button>
+
+        <div id="chatWindow" class="chat-window hidden">
+
+            <div class="chat-header">
+
+                <div>
+                    <strong>BudgetBee AI</strong>
+                    <small>Your budgeting assistant</small>
+                </div>
+
+                <button id="chatClose" aria-label="Close chatbot">
+                    ✕
+                </button>
+
+            </div>
+
+
+            <div id="chat" class="chat">
+
+                <div class="bot">
+                    Hi! Ask me about budgeting, saving,
+                    needs, or avoiding overspending.
+                </div>
+
+            </div>
+
+
+            <div class="prompts">
+
+                <button class="prompt">
+                    What is a need?
+                </button>
+
+                <button class="prompt">
+                    How much should I save?
+                </button>
+
+                <button class="prompt">
+                    How do I avoid overspending?
+                </button>
+
+            </div>
+
+
+            <form id="chatForm" class="chatInput">
+
+                <input
+                    id="question"
+                    type="text"
+                    placeholder="Ask BudgetBee..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button id="ask" class="btn primary" type="submit">
+                    Send
+                </button>
+
+            </form>
+
+            <small class="chat-note">
+                Educational information only.
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="wrap">
+
+            <a class="footer-logo" href="index.html">
+                BudgetBasics
+            </a>
+
+            <p>
+                NextGen BudgetBee · Web Innovation Unleashed
+            </p>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="budgetlearning.html">Learning Topics</a>
+
+                <a href="budgetfeedback.html">Feedback & Contact</a>
+
+            </div>
+
+            <p>
+                © 2026 BudgetBasics. Educational project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

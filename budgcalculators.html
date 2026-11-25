@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetBasics | Calculators</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- HEADER AND NAVIGATION -->
+    <header class="site-header">
+        <nav 
+        class="navbar" 
+        aria-label="Main navigation">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link" aria-label="BudgetBasics home">
+                    <img src="budget.png.png" class="site-logo"></a>
+                <a href="index.html" class="home-link">Home</a>
+            </div>
+
+            <button id="menu" 
+            class="menu-toggle" 
+            type="button"
+            aria-label="Toggle navigation" 
+            aria-expanded="false">
+                ☰
+            </button>
+
+            <div id="nav" 
+            class="nav-links">
+                <div class="dropdown">
+                    <button 
+                    type="button" 
+                    class="dropdown-btn" 
+                    id="learningBtn"
+                    aria-expanded="false" 
+                    aria-controls="learningMenu">Learning Topics ▾</button>
+
+                    <div class="dropdown-menu" id="learningMenu">
+                        <a href="budgetlearning.html#basics">Budgeting Basics</a>
+                        <a href="budgetlearning.html#needs">Needs vs Wants</a>
+                        <a href="budgetlearning.html#infographics">Infographics</a>
+                        <a href="budgetlearning.html#rule">50-30-20 Rule</a>
+                        <a href="budgetlearning.html#savings">Savings</a>
+                        <a href="budgetlearning.html#expenses">Expenses</a>
+                        <a href="budgetlearning.html#mistakes">Money Mistakes</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button 
+                    type="button" 
+                    class="dropdown-btn" 
+                    id="calculatorsBtn"
+                    aria-expanded="false" 
+                    aria-controls="calculatorsMenu">Calculators ▾</button>
+
+                    <div class="dropdown-menu" 
+                    id="calculatorsMenu">
+                        <a href="budgcalculators.html#budget-calculator">50-30-20 Calculator</a>
+                        <a href="budgcalculators.html#expense-calculator">Expense Planner</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" 
+                            id="contactDropdownBtn"
+                            aria-expanded="false" 
+                            aria-controls="contactDropdown">Feedback &amp; Contact ▾</button>
+                    <div class="dropdown-menu" id="contactDropdown">
+                        <a href="budgetfeedback.html#feedback">Feedback</a>
+                        <a href="budgetfeedback.html#contact">Contact Us</a>
+                    </div>
+                </div>
+
+                <button id="dark" type="button" class="dark-btn">🌙 Dark Mode</button>
+            </div>
+        </nav>
+    </header>
+    <main class="wrap calculators-page">
+        <section class="hero">
+            <p class="eyebrow">NEXTGEN BUDGETBEE</p>
+            <h1>Budget Calculators</h1>
+            <p>Use these simple tools to plan your income and understand your spending.</p>
+        </section>
+
+        <section id="budget-calculator" class="panel calculator-section">
+            
+            <p class="eyebrow">01 · PLAN YOUR INCOME</p>
+            <h2>50-30-20 Budget Calculator</h2>
+            <p>Enter your monthly income to divide it into needs, wants, and savings.</p>
+
+            <label for="monthlyIncome">Monthly income (₦)</label>
+            <input type="number" id="monthlyIncome" min="0" step="any"
+                   placeholder="e.g. 150000" inputmode="decimal">
+            <button type="button" class="btn primary" id="calculateBudget">Calculate Budget</button>
+            <p id="budgetError" role="alert"></p>
+
+            <div id="budgetResults" aria-live="polite" hidden>
+                <h3>Your 50-30-20 Breakdown</h3>
+                <p>Total monthly income: <strong id="totalIncome">₦0</strong></p>
+                <p>Needs (50%): <strong id="needsAmount">₦0</strong></p>
+                <p>Wants (30%): <strong id="wantsAmount">₦0</strong></p>
+                <p>Savings or debt repayment (20%): <strong id="savingsAmount">₦0</strong></p>
+            </div>
+        </section>
+
+       <section id="expense-calculator" class="panel calculator-section">
+
+    <p class="eyebrow">02 · PLAN AND MANAGE YOUR MONEY</p>
+    <h2>Expense Planner</h2>
+
+    <p>
+        Learn how to manage your regular expenses, plan future income
+        and make wise decisions when unexpected money arrives.
+    </p>
+
+    <!-- EXISTING EXPENSE CALCULATOR -->
+
+    <div class="panel">
+        <h3>1. Calculate Your Expenses</h3>
+
+        <p>Enter an expense amount to see it formatted in Nigerian naira.</p>
+
+        <form id="expenseForm">
+            <label for="expenseAmount">Expense amount (₦)</label>
+
+            <input type="number" id="expenseAmount"
+                   placeholder="e.g. 100000"
+                   min="0" step="any"
+                   inputmode="decimal" required>
+
+            <button type="submit" class="btn primary">
+                Calculate Expense
+            </button>
+        </form>
+
+        <p id="expenseError" role="alert"></p>
+
+        <div id="expenseResult" aria-live="polite" hidden>
+            <h3>Expense Result</h3>
+            <p>Your entered expense is:</p>
+            <strong id="expenseTotal">₦0</strong>
+        </div>
+    </div>
+
+
+    <!-- FUTURE INCOME CALCULATOR -->
+
+    <div class="panel">
+        <h3>2. Calculate Your Future Income</h3>
+
+        <p>
+            Estimate how much money you could earn over a future period.
+        </p>
+
+        <label for="futureAmount">Expected income per payment (₦)</label>
+        <input type="number" id="futureAmount"
+               placeholder="e.g. 50000" min="0" step="any">
+
+        <label for="incomeFrequency">How often will you receive it?</label>
+        <select id="incomeFrequency">
+            <option value="weekly">Weekly</option>
+            <option value="monthly" selected>Monthly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+
+        <label for="futureYears">How many years do you want to plan for?</label>
+        <input type="number" id="futureYears"
+               placeholder="e.g. 2" min="1" step="1">
+
+        <button type="button" class="btn primary" id="calculateFuture">
+            Calculate Future Income
+        </button>
+
+        <p id="futureError" role="alert"></p>
+
+        <div id="futureResult" aria-live="polite" hidden>
+            <h3>Your Future Income Estimate</h3>
+            <p>Total expected income:</p>
+            <strong id="futureTotal">₦0</strong>
+        </div>
+
+        <p>
+            <strong>How it works:</strong>
+            Income per payment × number of payments = estimated future income.
+            This estimate assumes your income stays the same.
+        </p>
+    </div>
+
+
+    <!-- UNEXPECTED INCOME PLANNER -->
+
+    <div class="panel">
+        <h3>3. Plan Your Unexpected Income</h3>
+
+        <p>
+            Sometimes money arrives unexpectedly through bonuses,
+            gifts, refunds or extra business income.
+            Learn how to divide it wisely.
+        </p>
+
+        <label for="unexpectedAmount">Unexpected money received (₦)</label>
+        <input type="number" id="unexpectedAmount"
+               placeholder="e.g. 100000" min="0" step="any">
+
+        <p>Choose how you want to divide your unexpected income.</p>
+
+<label for="needsPercent">Essential needs (%)</label>
+<input type="number" id="needsPercent" value="40" min="0" max="100">
+
+<label for="savingsPercent">Savings and future goals (%)</label>
+<input type="number" id="savingsPercent" value="30" min="0" max="100">
+
+<label for="debtPercent">Debt repayment (%)</label>
+<input type="number" id="debtPercent" value="20" min="0" max="100">
+
+<label for="personalPercent">Personal spending (%)</label>
+<input type="number" id="personalPercent" value="10" min="0" max="100">
+
+<p id="percentageTotal">Total allocation: 100%</p>
+
+        <button type="button" class="btn primary" id="calculateUnexpected">
+            Plan My Unexpected Income
+        </button>
+
+        <p id="unexpectedError" role="alert"></p>
+
+        <div id="unexpectedResult" aria-live="polite" hidden>
+            <h3>Your Money Breakdown</h3>
+
+            <p>Essential needs (40%):
+                <strong id="unexpectedNeeds">₦0</strong>
+            </p>
+
+            <p>Savings and goals (30%):
+                <strong id="unexpectedSavings">₦0</strong>
+            </p>
+
+            <p>Debt repayment (20%):
+                <strong id="unexpectedDebt">₦0</strong>
+            </p>
+
+            <p>Personal spending (10%):
+                <strong id="unexpectedPersonal">₦0</strong>
+            </p>
+        </div>
+
+        <p>
+            <strong>Remember:</strong>
+            These percentages are an example, not a fixed rule.
+            Adjust them according to your needs and financial priorities.
+        </p>
+    </div>
+    <!-- MONEY MANAGEMENT GUIDE -->
+
+<div class="panel">
+
+    <p class="eyebrow">04 · LEARN TO MANAGE MONEY</p>
+
+    <h3>Money Management Guide</h3>
+
+    <p>
+        Making money is important, but knowing how to manage
+        it wisely is what helps you build a better financial future.
+    </p>
+
+    <h4>1. Plan Before Spending Future Income</h4>
+
+    <p>
+        Before receiving your salary or expected income,
+        decide how much you will spend, save and use to
+        settle important financial responsibilities.
+    </p>
+
+    <h4>2. Think Before Spending Unexpected Money</h4>
+
+    <p>
+        When you receive a bonus, gift or unexpected payment,
+        avoid rushing to spend it. Review your needs,
+        outstanding debts and savings goals first.
+    </p>
+
+    <h4>3. Avoid Impulse Spending</h4>
+
+    <p>
+        Before buying something, ask yourself:
+        Do I really need it? Can I afford it?
+        Will this purchase affect my savings?
+    </p>
+
+    <h4>4. Build an Emergency Fund</h4>
+
+    <p>
+        Put some money aside regularly for emergencies
+        such as unexpected repairs, medical expenses
+        or sudden changes in income.
+    </p>
+
+    <h4>5. Review Your Expenses Regularly</h4>
+
+    <p>
+        Keep track of where your money goes.
+        Identify unnecessary spending and look for
+        ways to improve your financial habits.
+    </p>
+
+    <h4>Remember</h4>
+
+    <p>
+        Good money management is not about how much
+        you earn. It is also about how wisely you use
+        what you have.
+    </p>
+
+</div>
+
+</section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <a class="footer-logo" href="index.html">BudgetBasics</a>
+            <p>NextGen BudgetBee · Web Innovation Unleashed</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="budgetlearning.html">Learning Topics</a>
+                <a href="budgetfeedback.html">Feedback &amp; Contact</a>
+            </div>
+            <p>© 2026 BudgetBasics. Educational project.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
