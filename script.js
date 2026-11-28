@@ -350,6 +350,82 @@ function showExample() {
             : "Next example →";
 
 }
+// =====================================
+// QUIZ ANSWER BUTTONS
+// =====================================
+
+classifyButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        if (answered) return;
+
+        const selectedAnswer = this.dataset.type;
+        const correctAnswer = examples[currentExample];
+
+        if (selectedAnswer === correctAnswer.answer) {
+
+            score++;
+
+            classMsg.textContent =
+                "Correct! " + correctAnswer.explanation;
+
+        } else {
+
+            classMsg.textContent =
+                "Not quite. " + correctAnswer.explanation;
+
+        }
+
+        answered = true;
+
+        scoreDisplay.textContent =
+            "Your Score: " + score + " / " + examples.length;
+
+        classifyButtons.forEach(function (btn) {
+            btn.disabled = true;
+        });
+
+    });
+
+});
+
+
+// =====================================
+// NEXT EXAMPLE BUTTON
+// =====================================
+
+nextButton.addEventListener("click", function () {
+
+    if (!answered) {
+
+        classMsg.textContent =
+            "Please select Need or Want before moving to the next example.";
+
+        return;
+    }
+
+    if (currentExample === examples.length - 1) {
+
+        currentExample = 0;
+        score = 0;
+
+        scoreDisplay.textContent = "Your Score: 0 / 5";
+
+    } else {
+
+        currentExample++;
+
+    }
+
+    showExample();
+
+});
+
+
+// DISPLAY FIRST QUESTION
+
+showExample();
 
 
 // Check user's answer
@@ -609,9 +685,6 @@ if (calculateFuture) {
 // 9. UNEXPECTED INCOME PLANNER
 // =====================================
 
-// =====================================
-// 9. UNEXPECTED INCOME PLANNER
-// =====================================
 
 const unexpectedAmount = $("unexpectedAmount");
 const calculateUnexpected = $("calculateUnexpected");
