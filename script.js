@@ -394,7 +394,8 @@ classifyButtons.forEach(function (button) {
 // =====================================
 // NEXT EXAMPLE BUTTON
 // =====================================
-
+    
+if (nextButton) {
 nextButton.addEventListener("click", function () {
 
     if (!answered) {
@@ -417,15 +418,21 @@ nextButton.addEventListener("click", function () {
         currentExample++;
 
     }
-
+    
+    if (item && classMsg && nextButton) {
     showExample();
+}
 
 });
+};
+
 
 
 // DISPLAY FIRST QUESTION
 
-showExample();
+if (item && classMsg && nextButton && scoreDisplay) {
+    showExample();
+}
 
 
 // Check user's answer
@@ -892,40 +899,61 @@ if (visitsElement) {
 }
 
 
-// Display current date and time
+// DISPLAY DATE AND TIME
+
 function updateWebsiteClock() {
 
-    const now = new Date();
+    const dateElement = document.getElementById("date");
+    const timeElement = document.getElementById("time");
 
+    const now = new Date();
 
     if (dateElement) {
 
         dateElement.textContent = now.toLocaleDateString("en-NG", {
-
             weekday: "long",
             day: "numeric",
             month: "long",
             year: "numeric"
-
         });
 
     }
 
-
     if (timeElement) {
 
         timeElement.textContent = now.toLocaleTimeString("en-NG", {
-
             hour: "2-digit",
             minute: "2-digit",
             second: "2-digit",
             hour12: true
-
         });
 
     }
 
 }
+
+
+// START THE CLOCK
+
+function startWebsiteClock() {
+
+    updateWebsiteClock();
+
+    setInterval(updateWebsiteClock, 1000);
+
+}
+
+if (document.readyState === "loading") {
+
+    document.addEventListener("DOMContentLoaded", startWebsiteClock);
+
+} else {
+
+    startWebsiteClock();
+
+}
+
+
 // =====================================
 // 10. CONTACT FORM SUCCESS MESSAGE
 // =====================================
